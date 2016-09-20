@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::match(['post','get'],'/web/index','test\MY_Controller@index');
