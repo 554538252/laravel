@@ -17,3 +17,4 @@ Route::get('/', function () {
 
 
 Route::match(['post','get'],'/web/index','test\MY_Controller@index');
+Route::post('/hook', 'Hook_Controller@index');
